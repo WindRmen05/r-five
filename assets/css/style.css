@@ -826,6 +826,14 @@ p {
     padding-top: 75px;
     padding-bottom: 80px; } }
 
+
+    .service-bg {
+      position: absolute;
+      width: 100%;
+      height: 120%;
+      object-fit: cover;
+    }
+
 .single-services {
   padding: 50px 30px;
   background-color: var(--white-color);
@@ -964,6 +972,10 @@ p {
   .team-area {
     padding-top: 75px;
     padding-bottom: 80px; } }
+
+.bg-2 {
+  height: 70%;
+}
 
 .single-team .team-image img {
   width: 100%; }
