@@ -1318,7 +1318,7 @@ p.form-message.error {
     height: 50px;
     padding: 0 20px;
     border: 1px solid lightblue;
-    color: var(--white-color);
+    color: #000;
     background-color: #0d325d17; }
   .footer-newsleter .newsleter button {
     border: 0;
