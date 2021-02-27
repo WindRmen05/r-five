@@ -1359,7 +1359,7 @@ p.form-message.error {
     height: 50px;
     padding: 0 20px;
     border: 1px solid lightblue;
-    color: #000;
+    color: rgb(0, 0, 0);
     background-color: #0d325d17; }
   .footer-newsleter .newsleter button {
     border: 0;
