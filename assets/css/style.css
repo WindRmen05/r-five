@@ -569,6 +569,10 @@ p {
   position: relative; }
   .navbar .navbar-brand img {
     max-width: 100px; }
+    @media (max-width: 450px) {
+      .navbar .navbar-brand img {
+        max-width: 80px; }
+    }
   .navbar .navbar-toggler .toggler-icon {
     width: 30px;
     height: 2px;
