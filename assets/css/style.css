@@ -856,22 +856,33 @@ p {
         margin: 1rem;
         box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
         overflow: hidden;
-        height: 90%;
-        width: 90%;
+        height: 60vh;
+        width: 90vw;
+        display: flex;
+        align-items: center;
       }
 
-      @media only screen and (max-width: 408px) {
+      @media only screen and (max-width: 654px) {
         .gallery-item {
-          height: 80%;
-          width: 80%;
+          height: 55vh;
+          width: 85vw;
+          align-items: center;
         }
       
-        @media only screen and (max-width: 368px) {
+        /* @media only screen and (max-width: 451px) {
         .gallery-item {
-          height: 75%;
-          width: 75%;
+          height: 60vh;
+          width: 90vw;
+          align-items: center;
+        } */
+        
+        /* @media only screen and (max-width: 310px) {
+        .gallery-item {
+          height: 50vh;
+          width: 65%;
+          align-items: center;
         }
-      }
+      } */
       
       .gallery-image {
         display: block;
