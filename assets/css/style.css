@@ -826,6 +826,7 @@ p {
         max-width: 100rem;
         margin: 0 auto;
         padding: 1.5rem;
+        overflow-x: hidden;
       }
 
       @media only screen and (max-width: 433px) {
@@ -877,6 +878,14 @@ p {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
           grid-gap: 2rem;
+        }
+
+        @media only screen and (max-width: 436px) {
+          .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+            grid-gap: 2rem;
+          }
         }
       
         .gallery,
