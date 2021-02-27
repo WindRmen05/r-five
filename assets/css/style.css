@@ -822,7 +822,7 @@ p {
       4.SERVICES css 
 ===========================*/
 
-      .container {
+      .service .container {
         max-width: 100rem;
         margin: 0 auto;
         padding: 1.5rem;
