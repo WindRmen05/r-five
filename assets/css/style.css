@@ -859,6 +859,19 @@ p {
         height: 90%;
         width: 90%;
       }
+
+      @media only screen and (max-width: 408px) {
+        .gallery-item {
+          height: 80%;
+          width: 80%;
+        }
+      
+        @media only screen and (max-width: 368px) {
+        .gallery-item {
+          height: 75%;
+          width: 75%;
+        }
+      }
       
       .gallery-image {
         display: block;
