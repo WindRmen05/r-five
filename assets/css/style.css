@@ -821,58 +821,77 @@ p {
 /*===========================
       4.SERVICES css 
 ===========================*/
-@media (max-width: 767px) {
-  .services-area {
-    padding-top: 75px;
-    padding-bottom: 80px; } }
 
-
-    .service-bg {
-      position: absolute;
-      width: 100%;
-      height: 120%;
-      object-fit: cover;
-    }
-
-.single-services {
-  padding: 50px 30px;
-  background-color: var(--white-color);
-  -webkit-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  -ms-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s; }
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .single-services {
-      padding: 30px 10px; } }
-  @media (max-width: 767px) {
-    .single-services {
-      padding: 30px 10px; } }
-  .single-services .services-icon i {
-    font-size: 52px;
-    color: var(--yellow-color);
-    -webkit-transition: all 0.4s ease-out 0s;
-    -moz-transition: all 0.4s ease-out 0s;
-    -ms-transition: all 0.4s ease-out 0s;
-    -o-transition: all 0.4s ease-out 0s;
-    transition: all 0.4s ease-out 0s; }
-  .single-services .services-content .services-title {
-    font-size: 22px;
-    font-weight: 600;
-    font-family: 'Barlow', sans-serif;
-    -webkit-transition: all 0.4s ease-out 0s;
-    -moz-transition: all 0.4s ease-out 0s;
-    -ms-transition: all 0.4s ease-out 0s;
-    -o-transition: all 0.4s ease-out 0s;
-    transition: all 0.4s ease-out 0s; }
-  .single-services:hover {
-    background-color: var(--blue-color); }
-    .single-services:hover .services-icon i {
-      color: var(--white-color); }
-    .single-services:hover .services-content .services-title,
-    .single-services:hover .services-content p {
-      color: var(--white-color); }
-
+      .container {
+        max-width: 100rem;
+        margin: 0 auto;
+        padding: 0 2rem 2rem;
+      }
+      
+      .heading {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+        padding: 3.5rem 0;
+        color: #1a1a1a;
+      }
+      
+      .heading span {
+        display: block;
+      }
+      
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        /* Compensate for excess margin on outer gallery flex items */
+        margin: -1rem -1rem;
+      }
+      
+      .gallery-item {
+        /* Minimum width of 24rem and grow to fit available space */
+        flex: 1 0 24rem;
+        /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+        margin: 1rem;
+        box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+        height: 90%;
+        width: 90%;
+      }
+      
+      .gallery-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 400ms ease-out;
+      }
+      
+      .gallery-image:hover {
+        transform: scale(1.15);
+      }
+      
+      /*
+      
+      The following rule will only run if your browser supports CSS grid.
+      
+      Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+      
+      */
+      
+      @supports (display: grid) {
+        .gallery {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+          grid-gap: 2rem;
+        }
+      
+        .gallery,
+        .gallery-item {
+          margin: 0;
+        }
+      }
 /*===========================
       5.PROJECT css 
 ===========================*/
@@ -941,6 +960,16 @@ p {
     -ms-transform: translateY(0%);
     -o-transform: translateY(0%);
     transform: translateY(0%); }
+
+    @media only screen and (max-width: 900px) {
+      .single-project:hover .project-content {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+        -moz-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        -o-transform: translateY(0%);
+        transform: translateY(0%); }
+    }
 
 .project-active .slick-dots {
   text-align: center;
