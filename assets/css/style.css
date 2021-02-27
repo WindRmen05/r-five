@@ -34,6 +34,7 @@ body {
   font-style: normal;
   color: #646464;
   background-color: var(--black-color);
+  overflow-x: hidden;
 }
 
 * {
@@ -822,7 +823,7 @@ p {
       4.SERVICES css 
 ===========================*/
 
-      .service .container {
+      .services-area .container {
         max-width: 100rem;
         margin: 0 auto;
         padding: 1.5rem;
