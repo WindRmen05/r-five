@@ -824,6 +824,53 @@ p {
       font-size: 26px; } }
 
 /*===========================
+  4.SERVICES css 
+===========================*/
+
+.feature-box {
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  z-index: 10;
+  transition: all .3s; 
+  max-width: 100%;
+}
+
+.feature-box p {
+  height: 200px;
+  overflow: hidden;
+}
+
+.more {
+  height: 100%!important;
+}
+
+.feature-box button {
+  margin-top: 30px;
+}
+
+.feature-box__icon {
+  width: 40%;
+  margin-bottom: 5rem; 
+}
+.feature-box__text {
+  text-align: start; 
+}
+@media (max-width: 37.5em) {
+  .feature-box__text {
+    text-align: center; 
+  } 
+}
+.feature-box:hover {
+transform: scale(1.05) translateY(-0.7rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  cursor: pointer; 
+}
+      
+
+/*===========================
       4.SERVICES css 
 ===========================*/
 
