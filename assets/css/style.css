@@ -838,7 +838,7 @@ p {
 }
 
 .feature-box p {
-  height: 200px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -848,6 +848,7 @@ p {
 
 .feature-box button {
   margin-top: 30px;
+  font-size: 16px;
 }
 
 .feature-box__icon {
@@ -863,7 +864,7 @@ p {
   } 
 }
 .feature-box:hover {
-transform: scale(1.05) translateY(-0.7rem);
+transform: scale(1.001) translateY(-0.7rem);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
   cursor: pointer; 
