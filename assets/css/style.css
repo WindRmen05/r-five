@@ -827,6 +827,12 @@ p {
   4.SERVICES css 
 ===========================*/
 
+@media screen and (max-width:561px) {
+  #service .row {
+    display: grid;
+  }
+}
+
 .feature-box {
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -834,7 +840,8 @@ p {
   border-radius: 3px;
   z-index: 10;
   transition: all .3s; 
-  max-width: 100%;
+  max-width: 400px;
+  align-self: center;
 }
 
 .feature-box p {
@@ -849,6 +856,13 @@ p {
 .feature-box button {
   margin-top: 30px;
   font-size: 16px;
+}
+
+.cont {
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  justify-content:center;
 }
 
 .feature-box__icon {
