@@ -831,6 +831,13 @@ p {
   #service .row {
     display: grid;
   }
+
+  .feature-box {
+    background: rgba(248, 248, 248, 0.247);
+  }
+  .feature-box:hover {
+    background: rgba(248, 248, 248, 0.247);
+  }
 }
 
 .feature-box {
