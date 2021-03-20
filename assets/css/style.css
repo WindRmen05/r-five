@@ -885,8 +885,8 @@ p {
   } 
 }
 .feature-box:hover {
-transform: scale(1.001) translateY(-0.7rem);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+transform: scale(1.005) translateY(0.1rem);
+  box-shadow: 0 3rem 4rem rgba(0, 0, 0, 0.116);
   z-index: 20;
   cursor: pointer; 
 }
